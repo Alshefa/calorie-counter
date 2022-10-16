@@ -1,0 +1,27 @@
+# calorie-counter
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int numberOfItems;
+    int totalCalories = 0;
+    int caloriesForItem;
+    cout << "How many items did you eat today? ";
+    cin >> numberOfItems;
+    cout << "Enter the number of calories in each of the "
+         << numberOfItems << " items eaten:  " << endl;
+
+    for (int count = 1; count <= numberOfItems; count++)
+    {
+        cout << "Enter calorie: ";
+        cin >> caloriesForItem;
+        totalCalories += caloriesForItem;
+    }
+
+    cout << "Total calories eaten today = " << totalCalories;
+
+    return 0;
+}
